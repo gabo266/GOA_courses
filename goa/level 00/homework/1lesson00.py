@@ -3,8 +3,9 @@ from turtle import *
 
 #we want to paint a hous
 
-speed(10)
-width(7)
+bgcolor("black")
+speed(6)
+width(5)
 color("purple")
 begin_fill()
 forward(200)
