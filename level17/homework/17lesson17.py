@@ -15,4 +15,5 @@ while word < 10:
 
 k = int(input("guess number 1-100: "))
 while k != 43:
-    k = int(input("enter number: "))
+    print("you won!!!")
+    k = int(input("enter number: "))   
