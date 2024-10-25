@@ -1,0 +1,22 @@
+body{
+    background-color: #0B192C;
+}
+
+#na:hover{
+    color: rgb(138, 216, 191);
+    font-size: 40px;
+    }
+
+#no:hover{
+    color: rgb(138, 216, 191);
+    font-size: 40px;
+    }
+
+#ni:hover{
+    color: rgb(138, 216, 191);
+    font-size: 40px;
+    }
+
+button{
+    border: none;
+}

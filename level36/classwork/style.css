@@ -1,0 +1,8 @@
+.st {
+    color: red;
+    font-size: 30px;
+}
+
+p:hover{
+color: green;
+}
