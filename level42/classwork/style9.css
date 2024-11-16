@@ -1,0 +1,12 @@
+body {
+    background-color: lightslategray;
+}
+
+label {
+    color: white;
+    font-weight: bold;
+}
+
+input {
+    border: 5px solid lightblue;
+}
