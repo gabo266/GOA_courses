@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Cube and Centered Image</title>
+    <style>
+
+
+        body {
+            display: flex;              
+            justify-content: center;     
+            align-items: center;        
+            height: 100vh;               
+            margin: 0;                   
+            background-color: #f0f0f0;   
+        }
+
+        .cube {
+            width: 100px;              
+            height: 100px;              
+            background-color: red;      
+            border-radius: 10px 20px 30px 40px;  
+        }
+
+        .image-container {
+            width: 300px;               
+            height: 200px;             
+            padding: 20px;              
+            border: 5px solid #333;     
+            margin: 30px;               
+            background-color: white;    
+        }
+
+        .image-container img {
+            width: 100%;                
+            height: 100%;               
+            object-fit: cover;         
+        }
+ 
+    </style>
+</head>
+<body>
+
+    <div class="cube"></div>
+
+    <div class="image-container">
+        <img src="image.png" alt="">
+    </div>
+
+<!-- padding არის სივრცე რომელიც შეიცავს შიგთავსს როგორიცაა სურათი და მის კონტეინერს image-container კონტეინერის შიგნით ქმნის დამატებით ოთახს რაც აიძულებს შიგთავსს არ შეეხოს კონტეინერის კიდეებს -->
+
+<!-- border არის ხაზი, რომელიც აკრავს ელემენტის  არეალს ის ჩნდება შიგთავსის/შეფუთვის არეალსა და ზღვარს შორის და მისი მიზანია ელემენტის ვიზუალურად გამოყოფა გარემოსგან -->
+
+<!-- margin არის სივრცე ელემენტის საზღვრებს გარეთ ის ქმნის დისტანციას ელემენტსა და სხვა მიმდებარე ელემენტებს შორის ამ შემთხვევაში ის გამოყოფს გამოსახულების კონტეინერს წითელი კუბისგან და ხედის კიდეებისგან -->
+
+</body>
+</html>
