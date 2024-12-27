@@ -1,0 +1,11 @@
+.cube {
+    width: 100px;
+    height: 100px;
+    background-color: #e74c3c; 
+    position: relative;
+    left: 50px; 
+}
+
+.image {
+    border: 5px solid #3498db; 
+}

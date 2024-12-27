@@ -1,0 +1,9 @@
+.grow-container {
+    display: flex;
+    gap: 10px; 
+}
+
+p {
+    flex-grow: 1; 
+    background-color: lightyellow;
+}

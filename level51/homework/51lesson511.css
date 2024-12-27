@@ -1,0 +1,11 @@
+.vertical-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+}  

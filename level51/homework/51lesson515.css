@@ -1,0 +1,5 @@
+.inline-block div {
+    display: inline;
+    background-color: lightpink;
+    margin-right: 10px;
+}  

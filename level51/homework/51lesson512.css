@@ -1,0 +1,10 @@
+.wrap-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* პარაგრაფებს შორის დაშორება */
+}
+
+p {
+    width: 150px;
+    background-color: lightgreen;
+}
