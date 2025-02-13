@@ -1,0 +1,41 @@
+body{
+    background-color: lightcyan;
+}
+
+.ball1{
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    border: red ;
+    border-radius: 50%;
+    margin-top: 60px;
+    margin-left: 650px;
+}
+
+.ball3{
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border: black ;
+    border-radius: 50%;
+    left: 673.5px;
+    top: 120px;
+    animation: ball 1s linear infinite;
+    position: absolute;
+}
+
+.ball2{
+    width: 60px;
+    height: 60px;
+    background-color: blue;
+    border: blue ;
+    border-radius: 50%;
+    margin-top: 550px;
+    margin-left: 650px;
+}
+
+@keyframes ball{
+    0%{
+        transform: translatey(530px);
+    }
+}

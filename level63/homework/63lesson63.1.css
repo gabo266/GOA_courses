@@ -1,0 +1,143 @@
+body{
+    background-color: rgb(2, 0, 33);
+}
+
+.ball1{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 200, 0);
+    border-radius: 50%;
+    left: 550px;
+    top: 400px;
+    position: absolute;
+    animation: ball 1.5s linear 0.3s infinite;
+}
+
+@keyframes ball {
+    0% {
+        transform:scale(1);
+    }
+    25% {
+        transform:scale(1.2);
+    }
+    50% {
+        transform:scale(1.3);
+    }
+    75% {
+        transform:scale(1.4);
+    }
+    80%{
+        transform:scale(1.3);
+    }
+    85%{
+        transform:scale(1.3);
+    }
+    100% {
+        transform:scale(1);
+    }
+}
+
+.ball2{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 0, 76);
+    border-radius: 50%;
+    left: 650px;
+    top: 400px;
+    animation: ball1 1.5s linear 1s infinite;
+    position: absolute;
+}
+
+@keyframes ball1 {
+    0% {
+        transform:scale(1);
+    }
+    25% {
+        transform:scale(1.2);
+    }
+    50% {
+        transform:scale(1.3);
+    }
+    75% {
+        transform:scale(1.4);
+    }
+    80%{
+        transform:scale(1.3);
+    }
+    85%{
+        transform:scale(1.3);
+    }
+    100% {
+        transform:scale(1);
+    }
+}
+
+.ball3{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 81, 255);
+    border-radius: 50%;
+    left: 750px;
+    top: 400px;
+    animation: ball2 1.5s linear 1.1s infinite;
+    position: absolute;
+}
+
+@keyframes ball2 {
+    0% {
+        transform:scale(1);
+    }
+    25% {
+        transform:scale(1.2);
+    }
+    50% {
+        transform:scale(1.3);
+    }
+    75% {
+        transform:scale(1.4);
+    }
+    80%{
+        transform:scale(1.3);
+    }
+    85%{
+        transform:scale(1.3);
+    }
+    100% {
+        transform:scale(1);
+    }
+}
+
+.ball4{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(132, 0, 147);
+    border-radius: 50%;
+    left: 850px;
+    top: 400px;
+    animation: ball3 1.5s linear 1.2s infinite;
+    position: absolute;
+}
+
+@keyframes ball3 {
+    0% {
+        transform:scale(1);
+    }
+    25% {
+        transform:scale(1.2);
+    }
+    50% {
+        transform:scale(1.3);
+    }
+    75% {
+        transform:scale(1.4);
+    }
+    80%{
+        transform:scale(1.3);
+    }
+    85%{
+        transform:scale(1.3);
+    }
+    100% {
+        transform:scale(1);
+    }
+}

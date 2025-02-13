@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(176, 176, 176);
+}
+
+#img{
+    float: right;
+}
+
+#goa{
+    float: left;
+}
+
+#img1{
+    position: absolute;
+    top: 250px;
+    left: 1px;
+}
+#img2{
+    position: absolute;
+    top: 250px;
+    left: 500px;
+}
+#img3{
+    position: absolute;
+    top: 250px;
+    left: 1000px;
+}

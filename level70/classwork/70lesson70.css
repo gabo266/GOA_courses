@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.cont1 {
+    position: absolute;
+    top: 10px;
+    left: 600px;
+}
+
+.cont2 {
+    position: absolute;
+    top: 10px;
+    left: 700px;
+}
+
+.cont3 {
+    position: absolute;
+    top: 10px;
+    left: 800px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 1px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.product {
+    text-align: center;
+}
+.product img {
+    width: 200px;
+    height: auto;
+}

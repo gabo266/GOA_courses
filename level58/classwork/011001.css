@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.divbox {
+    width: 150px;
+    height: 200px;
+    background-color: #3498db;
+    cursor: pointer;
+    position: absolute;
+}
+
+.divbox:active {
+    transform:rotate(25deg);
+    transform: scale(4);
+    left: 50px;
+}
