@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ტექსტის შეყვანის ფორმა</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        /* Fixed button in the top-left corner */
+        .fixed-button {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        /* Centered box */
+        .centered-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        /* Fixed header */
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: gray;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        /* Moved square */
+        .moved-square {
+            position: absolute;
+            top: 50px;
+            left: 100px;
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+        /* Footer positioned at bottom-left */
+        .footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: black;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <button class="fixed-button">მარცხენა ზედა ღილაკი</button>
+    <div class="fixed-header">ფიქსირებული სათაური</div>
+    <div class="centered-box"></div>
+    <div class="moved-square"></div>
+    <div class="footer">ფიქსირებული ქვედა მარცხენა footer</div>
+    <div style="text-align: center; margin-top: 100px;">
+        <input type="text" id="textInput" placeholder="შეიყვანეთ ტექსტი">
+        <button onclick="handleSubmit()">გაგზავნა</button>
+    </div>
+    
+    <script>
+        function handleSubmit() {
+            const text = document.getElementById('textInput').value;
+            console.log(text);
+        }
+    </script>
+</body>
+</html>

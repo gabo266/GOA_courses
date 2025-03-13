@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Humana Clone</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: black;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .logo {
+            font-size: 20px;
+        }
+        .nav-links {
+            font-size: 14px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            margin-left: 20px;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            font-size: 24px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 10px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav-links">
+            <a href="#">Work, Pricing, About</a>
+            <a href="#">● work with us</a>
+        </nav>
+    </header>
+    <div class="hero">
+        We design independent brands.
+    </div>
+    <div class="gallery">
+        <img src="image1.jpg" alt="Project 1">
+        <img src="image2.jpg" alt="Project 2">
+        <img src="image3.jpg" alt="Project 3">
+        <img src="image4.jpg" alt="Project 4">
+    </div>
+</body>
+</html>

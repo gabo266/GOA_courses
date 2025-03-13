@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+    <style>
+        body {
+            background-color: #0a0a19;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .solar-system {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            margin: 50px auto;
+        }
+        .sun {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .orbit {
+            position: absolute;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: rotate 10s linear infinite;
+        }
+        .planet {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+        }
+        .orbit.mercury { width: 80px; height: 80px; animation-duration: 3s; }
+        .planet.mercury { background-color: gray; top: 50%; left: 100%; transform: translate(-50%, -50%); }
+        
+        .orbit.venus { width: 120px; height: 120px; animation-duration: 5s; }
+        .planet.venus { background-color: orange; top: 50%; left: 100%; transform: translate(-50%, -50%); }
+        
+        .orbit.earth { width: 180px; height: 180px; animation-duration: 7s; }
+        .planet.earth { background-color: blue; top: 50%; left: 100%; transform: translate(-50%, -50%); }
+        
+        .orbit.mars { width: 240px; height: 240px; animation-duration: 9s; }
+        .planet.mars { background-color: red; top: 50%; left: 100%; transform: translate(-50%, -50%); }
+        
+        .orbit.jupiter { width: 300px; height: 300px; animation-duration: 11s; }
+        .planet.jupiter { background-color: brown; width: 25px; height: 25px; top: 50%; left: 100%; transform: translate(-50%, -50%); }
+        
+        @keyframes rotate {
+            from { transform: translate(-50%, -50%) rotate(0deg); }
+            to { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Solar System</h1>
+    <div class="solar-system">
+        <div class="sun"></div>
+        <div class="orbit mercury"><div class="planet mercury"></div></div>
+        <div class="orbit venus"><div class="planet venus"></div></div>
+        <div class="orbit earth"><div class="planet earth"></div></div>
+        <div class="orbit mars"><div class="planet mars"></div></div>
+        <div class="orbit jupiter"><div class="planet jupiter"></div></div>
+    </div>
+</body>
+</html>

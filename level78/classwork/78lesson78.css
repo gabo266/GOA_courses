@@ -1,0 +1,19 @@
+body {
+    background-color: cadetblue;
+}
+
+button {
+    border: none;
+    background-color: lightblue;
+    font-size: 30px;
+}
+
+input {
+    border: none;
+    background-color: lightblue;
+    font-size: 30px;
+}
+
+#hi {text-align: center;
+    margin-top: 50px;
+}
