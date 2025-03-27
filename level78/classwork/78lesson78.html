@@ -9,14 +9,14 @@
 <body>
     <div id="hi">
         <input type="text" id="textInput"  placeholder="write text">
-        <button onclick="handleSubmit()">send text</button>
+        <button onclick="clickAlert()">send text</button>
     </div>
-    
+
     <script>
-        function handleSubmit() {
-            const text = document.getElementById('textInput').value;
-            console.log(text);
-        }
+    document.getElementById("hi").onclick = function() {
+        var textInput = document.getElementById("textInput").value;
+            alert(textInput)
+    };
     </script>
 </body>
 </html>

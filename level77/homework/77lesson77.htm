@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Page</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: white;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        img {
+            width: 300px;
+            height: auto;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="changeBackgroundColor()">Change Background</button>
+    <button onclick="changeButtonTextColor()">Change Button Text Color</button>
+    <button onclick="resetStyles()">Reset</button>
+    <br>
+    <img id="image" src="https://via.placeholder.com/300" onclick="changeImage()">
+    
+    <script>
+        let originalBgColor = "white";
+        let originalTextColor = "black";
+        let currentImage = true;
+
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = "lightblue";
+        }
+
+        function changeButtonTextColor() {
+            document.querySelectorAll("button").forEach(button => {
+                button.style.color = "red";
+            });
+        }
+
+        function resetStyles() {
+            document.body.style.backgroundColor = originalBgColor;
+            document.querySelectorAll("button").forEach(button => {
+                button.style.color = originalTextColor;
+            });
+        }
+
+        function changeImage() {
+            let img = document.getElementById("image");
+            if (currentImage) {
+                img.src = "https://via.placeholder.com/300/ff0000/ffffff";
+            } else {
+                img.src = "https://via.placeholder.com/300";
+            }
+            currentImage = !currentImage;
+        }
+    </script>
+</body>
+</html>

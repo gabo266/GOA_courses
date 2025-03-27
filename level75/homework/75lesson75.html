@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>მაგალითი</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        #myButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            transition: all 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <button id="myButton" onclick="changeButtonStyle()">დაჭირე მე!</button>
+
+    <script>
+        window.onload = function() {
+            let num1 = 5;
+            let num2 = 3;
+            let sum = num1 + num2;
+            let difference = num1 - num2;
+            let product = num1 * num2;
+            let quotient = num1 / num2;
+
+            console.log("სუმა: " + sum);
+            console.log("განსხვავება: " + difference);
+            console.log("პროდუქტი: " + product);
+            console.log("ცენტრალური: " + quotient);
+        };
+
+        function changeButtonStyle() {
+            var button = document.getElementById("myButton");
+
+            button.style.backgroundColor = "#FF5733";
+            button.style.color = "#FFF";
+            button.style.borderRadius = "15px";
+            button.style.width = "200px";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input id="user1" type="checkbox">
+        <input id="user2" type="checkbox"><br>
+
+
+        <input onclick="checker()" type="button" value="chek">
+    </form>
+
+    <h1 id="h1">result of the operation is:</h1>
+
+    <script>
+        function checker(){
+            let x1 = document.getElementById('user1').checked
+            let x2 = document.getElementById('user2').checked
+            let heading = document.getElementById('h1')
+
+            let result = x1 && x2
+            heading.textContent += result
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>მაგალითი</title>
+</head>
+<body>
+    <h1 id="myTitle">წარმატება!</h1>
+    <p id="myParagraph">ეს არის ნაბეჭდავი ტექსტი.</p>
+
+    <script>
+        let title = document.getElementById("myTitle");
+        let paragraph = document.getElementById("myParagraph");
+
+        title.textContent = "ეს არის ახალი სათაური!";
+        paragraph.textContent = "ეს არის ახალი პარაგრაფი.";
+
+        console.log("სათაური: " + title.textContent);
+        console.log("პარაგრაფი: " + paragraph.textContent);
+
+        let newVariable = 10; 
+        newVariable = 20;
+        console.log("ახალი ცვლადი: " + newVariable);\
+    </script>
+</body>
+</html>

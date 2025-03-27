@@ -1,4 +1,4 @@
-function handleSubmit() {
-    const text = document.getElementById('textInput').value;
-    console.log(text);
-}
+document.getElementById("hi").onclick = function() {
+    var textInput = document.getElementById("textInput").value;
+        alert(textInput);
+};

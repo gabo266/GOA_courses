@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Images</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        img {
+            width: 300px;
+            height: auto;
+            margin: 20px;
+            transition: width 0.3s ease;
+        }
+        button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interactive Image Buttons</h1>
+    <img id="image1" src="https://via.placeholder.com/300" alt="Image 1">
+    <img id="image2" src="https://via.placeholder.com/300" alt="Image 2">
+    
+    <button onclick="showAlert()">Show Warning Message</button>
+    <button onclick="changeSize('image1')">Change First Image Size</button>
+    <button onclick="changeSize('image2')">Change Second Image Size</button>
+    <button onclick="changeImage('image1')">Change First Image Source</button>
+    <button onclick="changeImage('image2')">Change Second Image Source</button>
+    
+    <script>
+        function showAlert() {
+            alert("Warning: This is an alert message!");
+        }
+
+        function changeSize(imageId) {
+            let image = document.getElementById(imageId);
+            image.style.width = image.style.width === "300px" ? "400px" : "300px";
+        }
+
+        function changeImage(imageId) {
+            let image = document.getElementById(imageId);
+            image.src = image.src.includes("300") ? "https://via.placeholder.com/400" : "https://via.placeholder.com/300";
+        }
+    </script>
+</body>
+</html>

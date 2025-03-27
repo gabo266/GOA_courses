@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison Site</title>
+</head>
+<body>
+    <h1>მონაცემთა ტიპების და შედარების ოპერატორების დემონსტრაცია</h1>
+    <script>
+        let number1 = 10;
+        let number2 = 5;
+        let text = "გამარჯობა";
+        let booleanValue = true;
+        let array = [1, 2, 3];
+        let object = { key: "value" };
+
+        let sum = number1 + number2;
+        let difference = number1 - number2;
+        let multiplication = number1 * number2;
+        let division = number1 / number2;
+
+        console.log("შეკრება:", sum);
+        console.log("გამოკლება:", difference);
+        console.log("გამრავლება:", multiplication);
+        console.log("გაყოფა:", division);
+
+        console.log("number1 > number2:", number1 > number2);
+        console.log("number1 < number2:", number1 < number2);
+        console.log("number1 >= number2:", number1 >= number2);
+        console.log("number1 <= number2:", number1 <= number2);
+        console.log("number1 == number2:", number1 == number2);
+        console.log("number1 != number2:", number1 != number2);
+        console.log("number1 === number2:", number1 === number2);
+        console.log("number1 !== number2:", number1 !== number2);
+
+        let userResponse = confirm("გსურთ საიტის დატოვება?");
+        if (userResponse) {
+            console.log("you will leave the site soon");
+        } else {
+            console.log("you are staying on the site");
+        }
+    </script>
+</body>
+</html>
