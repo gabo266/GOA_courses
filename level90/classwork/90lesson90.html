@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+</head>
+<body>
+    <h2>enter number n</h2>
+    <input type="number" id="numberInput" />
+    <button onclick="processOddNumbers()">calculate</button>
+
+    <h3>odd numbers:</h3>
+    <p id="oddNumbers"></p>
+
+    <h3>odd numbers summary:</h3>
+    <p id="oddSum"></p>
+
+<script>
+    function processOddNumbers() {
+        const n = parseInt(document.getElementById("numberInput").value);
+        let oddNums = [];
+        let sum = 0;
+
+    for (let i = 1; i < n; i += 2) {
+        oddNums.push(i);
+        sum += i;
+    }
+
+        document.getElementById("oddNumbers").innerText = oddNums.join(", ");
+        document.getElementById("oddSum").innerText = sum;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>document</title>
+</head>
+<body>
+
+<script>
+let name = prompt("როგორ გქვია?");
+
+alert("სალამი, " + name + "!");
+
+let isAdult = confirm("გესმის პროგრამირების? (დააჭირე OK თუ დიახ, Cancel თუ არა)");
+
+console.log("პასუხი:", isAdult);
+
+if (isAdult == true) {
+    console.log(name + " არის დაინტერესებული პროგრამირებით!");
+} else {
+    console.log(name + " ჯერ არაა დაინტერესებული პროგრამირებით.");
+}
+</script>
+
+</body>
+</html>

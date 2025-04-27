@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
+            background-color: rgb(11, 25, 44);
             margin: 0;
             padding: 0;
             display: flex;
@@ -17,7 +17,7 @@
         }
 
         .container {
-            background-color: #ffffff;
+            background-color: rgb(196, 215, 255);
             border-radius: 10px;
             padding: 30px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -25,7 +25,7 @@
         }
 
         h1 {
-            color: #4CAF50;
+            color: rgb(126, 161, 255);
             font-size: 36px;
         }
 
@@ -33,7 +33,7 @@
             padding: 15px 30px;
             font-size: 16px;
             color: white;
-            background-color: #007bff;
+            background-color: rgb(126, 161, 255);
             border: none;
             border-radius: 5px;
             cursor: pointer;
@@ -58,11 +58,11 @@
 <body>
 
     <div class="container">
-        <h1>მაგალითი საიტი</h1>
+        <h1>tester site</h1>
         
-        <button class="btn" onclick="showVariables()">აჩვენე ცვლადები</button>
+        <button class="btn" onclick="showVariables()">show variable</button>
 
-        <button class="btn" onclick="showSum()">შეაერთე ცვლადები</button>
+        <button class="btn" onclick="showSum()">combine variable</button>
 
         <div id="output" class="output"></div>
     </div>
@@ -73,17 +73,17 @@
         let variable3 = "Hello, world!"; 
         let variable4 = null; 
 
-        console.log("Variable 1 (რიცხვი):", variable1);
+        console.log("Variable 1 (number):", variable1);
         console.log("Variable 2 (Boolean):", variable2);
-        console.log("Variable 3 (სტრინგი):", variable3);
+        console.log("Variable 3 (string):", variable3);
         console.log("Variable 4 (null):", variable4);
 
         function showVariables() {
             const outputDiv = document.getElementById("output");
             outputDiv.innerHTML = `
-                <p>Variable 1 (რიცხვი): ${variable1}</p>
+                <p>Variable 1 (number): ${variable1}</p>
                 <p>Variable 2 (Boolean): ${variable2}</p>
-                <p>Variable 3 (სტრინგი): ${variable3}</p>
+                <p>Variable 3 (string): ${variable3}</p>
                 <p>Variable 4 (null): ${variable4}</p>
             `;
         }
@@ -92,7 +92,7 @@
             const outputDiv = document.getElementById("output");
             let sum = variable1 + (variable2 ? 1 : 0);
             outputDiv.innerHTML += `
-                <p> ცვლადების შეერთება (variable1 + variable2): ${sum}</p>
+                <p> combineing variable (variable1 + variable2): ${sum}</p>
             `;
         }
     </script>

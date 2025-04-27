@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One of Us</title>
+    <link rel="stylesheet" href="82lesson82.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+
+            <div class="logo">
+                <img id="w" src="image1.png"><br>
+                one of us
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">How it works</a></li>
+                    <li><a href="#">Tech Capabilities</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-bottom-text">
+                We're here to amplify your engagement game, forge deeper connections, and skyrocket your brand with the magic of Web3.
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="content-left">
+                <h1>Transforming attendees into superusers</h1>
+                <p class="subtext">Welcome to one of us, where brands and communities connect, engage, and grow through innovative blockchain-powered, gamified events.</p>
+                <div class="subscribe-box">
+                    <input type="email" id="textInput" placeholder="Enter your email">
+                    <button id="hi" onclick="clickAlert()">Subscribe</button>
+                </div>
+                <p class="journey-text">Follow on Our Journey – Elevate Your Brand’s Community Experience.</p>
+            </div>
+            <div class="content-right">
+                <img src="image.png" alt="Mobile UI Preview">
+            </div>
+        </div>
+    </div>
+    <p id="e">We Facilitate Events&Membership</p>
+    <p id="q">That introduces new levels of</p>
+
+    <script>
+        document.getElementById("hi").onclick = function() {
+            var textInput = document.getElementById("textInput").value;
+                alert(textInput + " successfully subscribed")
+        };
+        </script>
+</body>
+</html>
+
+    <!--https://oneofus.netlify.app/-->

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2>Count: <span id="count">0</span></h2>
+
+<input type="checkbox" id="plus"> +1
+<input type="checkbox" id="minus"> -1
+
+<button onclick="update()">Go</button>
+
+<script>
+    let count = 0;
+
+    function update() {
+        if (document.getElementById("plus").checked) count++;
+        if (document.getElementById("minus").checked) count--;
+        document.getElementById("count").textContent = count;
+    }
+</script>
+</body>
+</html>

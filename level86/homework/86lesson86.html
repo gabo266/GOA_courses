@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="86lesson86.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>check ticket price</h1>
+    <input type="text" id="ageInput" placeholder="შეიყვანეთ ასაკი">
+    <button onclick="calculatePrice()">calculate</button>
+    <p id="result"></p>
+
+    <script>
+        function calculatePrice() {
+            const ageInput = document.getElementById('ageInput').value.trim();
+            const result = document.getElementById('result');
+            const age = parseInt(ageInput);
+
+        if (isNaN(age) || age > 100) {
+            result.textContent = "enter right age.";
+            return;
+        }
+
+        if (age < 6) {
+            result.textContent = "ticket is free.";
+        } else if (age >= 6 && age <= 17) {
+            result.textContent = "ticket price is 5 lari.";
+        } else if (age >= 18 && age <= 64) {
+            result.textContent = "ticket price is 10 lari.";
+        } else if (age >= 65) {
+            result.textContent = "ticket price is 15 lari.";
+        } else {
+            result.textContent = "enter right age.";
+        }
+    }
+    </script>
+</body>
+</html>

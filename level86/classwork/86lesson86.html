@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="86lesson86.css">
+    <title>მოსწავლის გვერდი</title>
+</head>
+<body>
+
+    <h1>students name: gabriel</h1>
+
+<div class="number" id="numberDisplay">0</div>
+
+    <button onclick="changeNumber(10)">+10</button>
+    <button onclick="changeNumber(20)">+20</button>
+    <button onclick="changeNumber(-10)">-10</button>
+    <button onclick="changeNumber(-20)">-20</button>
+
+<script>
+    let currentNumber = 0;
+
+    function changeNumber(amount) {
+        currentNumber += amount;
+        document.getElementById('numberDisplay').textContent = currentNumber;
+    }
+</script>
+
+</body>
+</html>

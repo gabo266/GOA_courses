@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+    background-color: rgb(140, 140, 158);
+}
+.number {
+    font-size: 48px;
+    margin: 20px 0;
+}
+button {
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 2px 1px;
+}

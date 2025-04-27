@@ -15,5 +15,9 @@ input {
 }
 
 #hi {text-align: center;
-    margin-top: 50px;
+    margin: auto;
+}
+
+#textInput {text-align: center;
+    margin: auto;
 }

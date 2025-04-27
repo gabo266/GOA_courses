@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>While Loop Example</title>
+</head>
+<body>
+
+<button onclick="runLoops()">Run While Loops</button>
+
+<script>
+function runLoops() {
+
+    let i = 1;
+    while (i <= 10) {
+    console.log(i++);
+    }
+    console.log('-----');
+
+    let j = 1;
+    while (j <= 20) {
+    if (j % 2 !== 0) console.log(j);
+    j++;
+    }
+    console.log('-----');
+
+    let k = 1, sum = 0;
+    while (k <= 20) {
+    sum += k++;
+    }
+    console.log("Sum:", sum);
+    console.log('-----');
+
+    let m = 5;
+    while (m <= 25) {
+    if (m !== 5) console.log(m);
+    m++;
+    }
+    console.log('-----');
+    console.log(7);
+}
+</script>
+
+</body>
+</html>
