@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <link rel="stylesheet" href="97lesson97.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">hello change photo characteristics</h1>
+        <img id="photo" src="image.png">
+        <div>
+            <button onclick="change('width')">change width</button>
+            <button onclick="change('height')">change height</button>
+            <button onclick="change('radius')">change border-radius</button>
+            <button onclick="change('shadow')">change box-shadow</button>
+            <button onclick="reset()">Reset</button>
+            <button onclick="randomize()">Randomize</button>
+            <button onclick="changeTitle('color')">change color</button>
+            <button onclick="changeTitle('size')">change size</button>
+        </div>
+    </div>
+
+<script>
+function change(property) {
+    const photo = document.getElementById("photo");
+
+    if (property === 'width') {
+        photo.style.width = "500px";
+    } else if (property === 'height') {
+        photo.style.height = "500px";
+    } else if (property === 'radius') {
+        photo.style.borderRadius = "50%";
+    } else if (property === 'shadow') {
+        photo.style.boxShadow = "10px 10px 20px rgba(0, 0, 0, 0.2)";
+    }
+}
+
+function reset() {
+    const photo = document.getElementById("photo");
+    photo.style.width = "300px";
+    photo.style.height = "300px";
+    photo.style.borderRadius = "0";
+    photo.style.boxShadow = "none";
+}
+
+function randomize() {
+    const photo = document.getElementById("photo");
+    const randomWidth = Math.floor(Math.random() * 500) + 200 + "px";
+    const randomHeight = Math.floor(Math.random() * 500) + 200 + "px";
+    const randomRadius = Math.floor(Math.random() * 100) + "%";
+    const randomShadow = `${Math.floor(Math.random() * 20)}px ${Math.floor(Math.random() * 20)}px ${Math.floor(Math.random() * 30)}px rgba(0, 0, 0, 0.3)`;
+
+    photo.style.width = randomWidth;
+    photo.style.height = randomHeight;
+    photo.style.borderRadius = randomRadius;
+    photo.style.boxShadow = randomShadow;
+}
+
+function changeTitle(property) {
+    const title = document.getElementById("title");
+
+    if (property === 'color') {
+        const colors = ["#FF5733", "#33FF57", "#3357FF", "#FF33A6", "#FF9633"];
+        title.style.color = colors[Math.floor(Math.random() * colors.length)];
+    } else if (property === 'size') {
+        title.style.fontSize = (Math.floor(Math.random() * 20) + 24) + "px";
+    }
+}
+</script>
+</body>
+</html>

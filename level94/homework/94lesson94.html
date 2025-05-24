@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let i = 0;
+while (i <= 20) {
+    console.log(i);
+    i += 2;
+}
+
+let o = 10;
+while (o >= 1) {
+    console.log(o);
+    o--;
+}
+
+let q = 1;
+let count = 0;
+while (q <= 5) {
+    count++;
+    q++;
+}
+console.log("Count:", count);
+
+let r = 1;
+while (r <= 100) {
+    console.log(r);
+  r *= 2;
+}
+
+let num = parseInt(prompt("შეიყვანეთ რიცხვი:"));
+let t = 1;
+
+while (t <= num) {
+    console.log(t);
+    t++;
+}
+
+for (let u = 1; u <= 10; u++) {
+    console.log(u * u);
+}
+
+for (let y = 1; y <= 50; y++) {
+    console.log(y);
+}
+
+const names = ['ana', 'ben', 'carl', 'dana', 'eva'];
+for (let i = 0; i < names.length; i++) {
+    console.log(`გამარჯობა, ${names[i]}!`);
+}
+
+for (let i = 100; i >= 0; i -= 10) {
+    console.log(i);
+}
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let sum = 0;
+
+for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 === 0) {
+    sum += numbers[i];
+    }
+}
+
+console.log("Sum of even numbers:", sum);
+    </script>
+</body>
+</html>

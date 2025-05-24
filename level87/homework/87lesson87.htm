@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loops Example</title>
+</head>
+<body>
+
+<script>
+let i = 1;
+console.log("1-დან 10-მდე რიცხვები:");
+while (i <= 10) {
+    console.log(i);
+    i++;
+}
+
+console.log("\n");
+
+i = 2;
+console.log("ლუწი რიცხვები 1-დან 20-მდე:");
+while (i <= 20) {
+    console.log(i);
+    i += 2;
+}
+
+console.log("\n");
+
+i = 1;
+let sum = 0;
+console.log("ჯამი 1-დან 10-მდე:");
+while (i <= 10) {
+    sum += i;
+    i++;
+}
+console.log("ჯამი:", sum);
+
+console.log("\n");
+
+i = 10;
+console.log("რიცხვები 10-დან 1-მდე:");
+while (i >= 1) {
+    console.log(i);
+    i--;
+}
+
+console.log("\n");
+
+let randomNumber = Math.floor(Math.random() * 50) + 1;
+let guess = 0;
+
+console.log("გამოცანა: გამოიცანით რიცხვი 1-დან 50-მდე.");
+while (guess !== randomNumber) {
+    guess = parseInt(prompt("გამოიცანით რიცხვი 1-დან 50-მდე:"));
+
+    if (guess < randomNumber) {
+        alert("თქვენი ვარაუდი ნაკლებია!");
+    } else if (guess > randomNumber) {
+        alert("თქვენი ვარაუდი მეტია!");
+    } else {
+        alert("გაგიმართლათ! სწორად გამოიცანით რიცხვი!");
+    }
+}
+</script>
+
+</body>
+</html>
