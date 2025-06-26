@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let me = {
+    name: "Gabrieli",
+    surname: "Robakidze",
+    age: 14
+};
+
+let familyMember = {
+    name: "tako",
+    surname: "Robakidze",
+    age: 25
+};
+
+console.log("Me:", me);
+console.log("Family Member:", familyMember);
+
+console.log("My name:", me.name);
+console.log("My surname:", me.surname);
+console.log("My age:", me.age);
+
+console.log("Family member name:", familyMember.name);
+console.log("Family member surname:", familyMember.surname);
+console.log("Family member age:", familyMember.age);
+
+me.age = 18;
+familyMember.age = 41;
+
+console.log("Updated Me:", me);
+console.log("Updated Family Member:", familyMember);
+
+me.hobby = "Coding";
+familyMember.relation = "Mother";
+
+console.log("Me with new property:", me);
+console.log("Family Member with new property:", familyMember);
+
+delete me.surname;
+delete familyMember.name;
+
+console.log("Me after deleting surname:", me);
+console.log("Family Member after deleting name:", familyMember);
+    </script>
+</body>
+</html>

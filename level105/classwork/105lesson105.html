@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>stopwatch</p>
+    <p id="sw">0</p>
+    <button onclick="ci">reset</button>
+    <script>
+        num = 0
+
+        function countUP() {
+            let sw = document.getElementById("sw")
+            num += 1
+            sw.textContent = num
+        }
+        let mi = setInterval(countUP, 1000)
+
+        function ci() {
+        onclick(clearInterval(mi))
+        }
+    </script>
+</body>
+</html>

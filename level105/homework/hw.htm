@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>1. Console Message Every Second</h2>
+    <button onclick="startConsoleLog()">Start Logging</button>
+
+    <h2>2. Simple Stopwatch (console)</h2>
+    <button onclick="startConsoleStopwatch()">Start Console Stopwatch</button>
+
+    <h2>3. Stopwatch with Display</h2>
+    <h1 id="stopwatchDisplay">0</h1>
+    <button onclick="startStopwatch()">Start</button>
+    <button onclick="stopStopwatch()">Stop</button>
+    <button onclick="resetStopwatch()">Reset</button>
+
+    <h2>4. Timer with Input</h2>
+    <input type="number" id="timerInput" placeholder="Seconds">
+    <button onclick="startInputTimer()">Start Timer</button>
+    <h2 id="timerDisplay">0</h2>
+
+    <h2>5. Bomb Countdown</h2>
+    <img id="bomb" src="https://cdn-icons-png.flaticon.com/512/655/655469.png">
+    <div id="bombCountdown">10</div>
+    <button onclick="startBombCountdown()">Start Bomb</button>
+
+    <script>
+    function startConsoleLog() {
+        setInterval(() => console.log("Logging every second..."), 1000);
+    }
+
+    let consoleTime = 0;
+    function startConsoleStopwatch() {
+        setInterval(() => console.log(consoleTime++), 1000);
+    }
+
+    let swTime = 0;
+    let swInterval = null;
+
+    function startStopwatch() {
+        if (swInterval) return;
+        swInterval = setInterval(() => {
+            swTime++;
+            document.getElementById("stopwatchDisplay").innerText = swTime;
+        }, 1000);
+    }
+
+    function stopStopwatch() {
+        clearInterval(swInterval);
+        swInterval = null;
+    }
+
+    function resetStopwatch() {
+        stopStopwatch();
+        swTime = 0;
+        document.getElementById("stopwatchDisplay").innerText = "0";
+    }
+
+    let timerInt = null;
+    function startInputTimer() {
+        let time = parseInt(document.getElementById("timerInput").value);
+        if (isNaN(time) || time <= 0) return;
+        clearInterval(timerInt);
+        document.getElementById("timerDisplay").innerText = time;
+
+    timerInt = setInterval(() => {
+        time--;
+        document.getElementById("timerDisplay").innerText = time;
+        if (time === 0) clearInterval(timerInt);
+    }, 1000);
+    }
+
+    function startBombCountdown() {
+        let time = 10;
+        const bombEl = document.getElementById("bombCountdown");
+        bombEl.innerText = time;
+        let bombInterval = setInterval(() => {
+        time--;
+        bombEl.innerText = time;
+        if (time === 0) {
+            clearInterval(bombInterval);
+            document.body.style.backgroundImage = "url('https://i.imgur.com/7A1mM6L.gif')";
+            bombEl.innerText = "💥 Boom!";
+            }
+        }, 1000);
+    }
+    </script>
+</body>
+</html>

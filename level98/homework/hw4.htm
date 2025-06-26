@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        Car.prototype.age = function() {
+    const currentYear = new Date().getFullYear();
+    return currentYear - this.year;
+    };
+
+    console.log(`Car 1 ასაკი: ${car1.age()} წელი`);
+    console.log(`Car 2 ასაკი: ${car2.age()} წელი`);
+    console.log(`Car 3 ასაკი: ${car3.age()} წელი`);
+    </script>
+</body>
+</html>

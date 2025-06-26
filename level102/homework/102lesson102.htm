@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="myImage" src="image.png" alt="Placeholder">
+
+    <h1 id="myHeader">Hover over this header</h1>
+    <script>
+    document.getElementById("myButton").addEventListener("click", function () {
+        document.getElementById("myParagraph").innerText = "button clicked!";
+    });
+
+    document.getElementById("myDiv").addEventListener("pointerover", function () {
+        this.style.backgroundColor = "green";
+    });
+
+    document.getElementById("myDiv").addEventListener("pointerout", function () {
+        this.style.backgroundColor = "white";
+    });
+
+    document.getElementById("myImage").addEventListener("click", function () {
+        this.style.width = "300px";
+    });
+
+    document.getElementById("myHeader").addEventListener("pointerover", function () {
+        console.log("Mouse is here!");
+    });
+    </script>
+</body>
+</html>

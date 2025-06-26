@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="mainParagraph">this is main page</p>
+
+    <div id="container">
+        <button id="replaceBtn">change</button>
+    </div>
+
+    <script>
+    let button = document.getElementById('replaceBtn');
+    let container = document.getElementById('container');
+
+    let newParagraph = document.createElement('p');
+    newParagraph.textContent = 'button changed with p.';
+
+    container.replaceChild(newParagraph, button);
+    </script>
+
+</body>
+</html>

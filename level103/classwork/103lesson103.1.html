@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>do not remove mouse from a button once you click it!</p>
+
+    <button id="gameBtn">click and hold Me</button>
+
+<script>
+    let button = document.getElementById('gameBtn');
+    let isHolding = false;
+
+    button.addEventListener('mousedown', () => {
+        isHolding = true;
+    });
+
+        button.addEventListener('mouseup', () => {
+        if (isHolding) {
+            console.log("you won!");
+        }
+        isHolding = false;
+    });
+
+        document.addEventListener('mouseup', (e) => {
+        if (isHolding && e.target !== button) {
+            console.log("you lost!");
+        }
+        isHolding = false;
+    });
+</script>
+</body>
+</html>

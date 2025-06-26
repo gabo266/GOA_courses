@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="photo" src="image.png">
+
+    <button id="btn">change pic</button>
+
+    <script>
+        let btn = document.getElementById("btn");
+        let photo = document.getElementById("photo");
+
+        btn.addEventListener('pointerdown', function() {
+            photo.src = "image1.png";
+        });
+    </script>
+</body>
+</html>
