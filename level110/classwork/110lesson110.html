@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="ball"></div>
+
+    <script>
+        let ball = document.getElementById('ball');
+        let isred = false;
+
+    function toggleColor() {
+        if (isred) {
+        ball.style.backgroundColor = 'blue';
+        } else {
+        ball.style.backgroundColor = 'red';
+        }
+        isred = !isred;
+    }
+
+    setInterval(toggleColor, 5000);
+    </script>
+</body>
+</html>

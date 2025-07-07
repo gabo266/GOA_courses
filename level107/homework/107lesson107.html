@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>მასივის ამოცანები</h1>
+    <pre id="output" style="font-size: 18px;"></pre>
+
+    <script>
+    const output = document.getElementById("output");
+
+    function printNumbers(arr) {
+        output.textContent += "1. რიცხვები მასივიდან:\n";
+        for (let i = 0; i < arr.length; i++) {
+        output.textContent += arr[i] + "\n";
+        }
+        output.textContent += "\n";
+    }
+
+    function printNamesWithIndex(names) {
+        output.textContent += "2. სახელები და მათი პოზიციები:\n";
+        for (let i = 0; i < names.length; i++) {
+        output.textContent += `${i}: ${names[i]}\n`;
+        }
+        output.textContent += "\n";
+    }
+
+    function multiplyByTwo(arr) {
+        output.textContent += "3. რიცხვები გამრავლებული 2-ზე:\n";
+        for (let i = 0; i < arr.length; i++) {
+        output.textContent += (arr[i] * 2) + "\n";
+        }
+        output.textContent += "\n";
+    }
+
+    function countGreaterThanTen(arr) {
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > 10) {
+            count++;
+        }
+        }
+        output.textContent += `4. 10-ზე მეტი რიცხვების რაოდენობაა: ${count}\n\n`;
+    }
+
+    function sumArray(arr) {
+        let sum = 0;
+        for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+        output.textContent += `5. მასივის ჯამი: ${sum}\n\n`;
+    }
+
+    const numbers = [5, 12, 8, 20, 3];
+    const names = ["ნიკა", "ანა", "ლაშა", "თამარი"];
+
+    printNumbers(numbers);
+    printNamesWithIndex(names);
+    multiplyByTwo(numbers);
+    countGreaterThanTen(numbers);
+    sumArray(numbers);
+    </script>
+
+</body>
+</html>

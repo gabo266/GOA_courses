@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Features Together</title>
+    <style>
+body {
+    font-family: Arial;
+    text-align: center;
+    margin-top: 30px;
+    }
+
+#counterParagraph {
+    font-size: 24px;
+    margin: 20px;
+    }
+
+#growImage {
+    width: 200px;
+    transition: 0.3s ease;
+    }
+
+#growImage:hover {
+    transform: scale(1.2);
+    }
+
+#ball {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 50%;
+    position: relative;
+    margin: 20px auto;
+    }
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <p id="counterParagraph">0</p>
+  <button onclick="increment()">+1</button>
+
+  <div>
+    <img id="growImage" src="https://via.placeholder.com/200" alt="Hover to grow">
+  </div>
+
+  <div id="ball"></div>
+  <button onclick="moveBall()">Move Ball Down</button>
+
+  <script>
+    let count = 0;
+    function increment() {
+      count++;
+      document.getElementById("counterParagraph").textContent = count;
+    }
+
+    let moveDistance = 0;
+    function moveBall() {
+      moveDistance += 50;
+      document.getElementById("ball").style.top = moveDistance + "px";
+    }
+
+    const ball = document.getElementById("ball");
+    let isBlue = true;
+    setInterval(() => {
+      isBlue = !isBlue;
+      ball.style.backgroundColor = isBlue ? "blue" : "red";
+    }, 5000);
+
+    window.addEventListener("DOMContentLoaded", () => {
+        console.log(5);
+    });
+    </script>
+
+</body>
+</html>
